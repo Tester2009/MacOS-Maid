@@ -1,16 +1,17 @@
 #!/bin/bash
 SECONDS=0
 
+# REMOVED
 #Delete Saved SSIDs For Security
 #Be Sure To Set Home And Work SSID for ease of use.
-printf "Deleting saved wireless networks.\n"
-homessid="AddMe"
-workssid="AddMe"
-IFS=$'\n'
-for ssid in $(networksetup -listpreferredwirelessnetworks en0 | grep -v "Preferred networks on en0:" | grep -v $homessid | grep -v $workssid | sed "s/[\	]//g")
-do
-    networksetup -removepreferredwirelessnetwork en0 "$ssid"  > /dev/null 2>&1
-done
+# printf "Deleting saved wireless networks.\n"
+# homessid="AddMe"
+# workssid="AddMe"
+# IFS=$'\n'
+# for ssid in $(networksetup -listpreferredwirelessnetworks en0 | grep -v "Preferred networks on en0:" | grep -v $homessid | grep -v $workssid | sed "s/[\	]//g")
+# do
+#     networksetup -removepreferredwirelessnetwork en0 "$ssid"  > /dev/null 2>&1
+# done
 
 #Install Updates.
 printf "Installing needed updates.\n"

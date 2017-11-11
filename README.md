@@ -2,7 +2,7 @@
 A simple shell script I run to keep my MacBook clean and patched.
 
 ## What It Does:
-- Deletes Saved Wireless Networks
+- ~Deletes Saved Wireless Networks~
 - Installs Needed System Updates
 - Empties The Trash
 - Deletes All System Logs
